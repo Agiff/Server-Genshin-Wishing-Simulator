@@ -8,7 +8,7 @@ Genshin Wishing Simulator is an application to let the user to have a similar ex
 ## RESTful endpoints
 ### POST /users/register
 
-> Create new product
+> Create new account
 
 _Request Body_
 ```
@@ -54,12 +54,50 @@ OR
 }
 ```
 
+### POST /users/login
+
+> Login and get the access_token
+
+_Request Body_
+```
+{
+  "username": "<username to get insert into>",
+  "password": "<password to get insert into>"
+}
+OR
+{
+  "email": "<email to get insert into>",
+  "password": "<password to get insert into>"
+}
+```
+
+_Response (200 - OK)_
+```
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjc2ODI1NjA2fQ.YePkiNMmiLn6gJnCpNtquB7SbB3g9NpEsziIZIvU3Go"
+}
+```
+
+_Response (400 - Bad Request)_
+```
+{
+  "message": "Username/Email or Password is required"
+}
+```
+
+_Response (401 - Unauthorized)_
+```
+{
+  "message": "Username/Email or Password is invalid"
+}
+```
+
 ### Global Error
 
 _Response (401 - Unauthorized)_
 ```
 {
-  "message": "Unauthenticated"
+  "message": "You're not allowed to access this page"
 }
 ```
 _Response (500 - Internal Server Error)_
