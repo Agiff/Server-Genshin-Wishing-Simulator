@@ -6,7 +6,13 @@ class userController {
   }
 
   static async register(req, res, next) {
-    res.send('register');
+    try {
+      const { username, email, password } = req.body;
+      const createdUser = await User.create({ username, email, password });
+      res.status(201).json(createdUser);
+    } catch (error) {
+      next(error);
+    }
   }
 }
 
