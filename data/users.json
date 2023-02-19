@@ -1,0 +1,27 @@
+[
+  {
+    "username": "seirei",
+    "email": "ghifarimohammadrahadian@gmail.com",
+    "password": "qwerty123"
+  },
+  {
+    "username": "agif",
+    "email": "agif@agif.com",
+    "password": "qwe"
+  },
+  {
+    "username": "test",
+    "email": "test@test.com",
+    "password": "qwe"
+  },
+  {
+    "username": "user",
+    "email": "user@user.com",
+    "password": "qwe"
+  },
+  {
+    "username": "staff",
+    "email": "staff@staff.com",
+    "password": "qwe"
+  }
+]
