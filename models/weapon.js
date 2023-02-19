@@ -28,7 +28,14 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: { msg: 'Name is required' }
       }
     },
-    UserId: DataTypes.INTEGER
+    InventoryId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        notNull: { msg: 'The owner is missing' },
+        notEmpty: { msg: 'The owner is missing' }
+      }
+    },
   }, {
     sequelize,
     modelName: 'Weapon',

@@ -20,6 +20,11 @@ module.exports = {
       return el;
     })
 
+    const inventories = require('../data/inventories.json').map(el => {
+      el.createdAt = el.updatedAt = new Date();
+      return el;
+    })
+
     const characters = require('../data/characters.json').map(el => {
       el.createdAt = el.updatedAt = new Date();
       return el;
@@ -31,6 +36,7 @@ module.exports = {
     })
 
     await queryInterface.bulkInsert('Users', users, {});
+    await queryInterface.bulkInsert('Inventories', inventories, {});
     await queryInterface.bulkInsert('Characters', characters, {});
     await queryInterface.bulkInsert('Weapons', weapons, {});
   },
@@ -43,6 +49,7 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
     await queryInterface.bulkDelete('Users', null, {});
+    await queryInterface.bulkDelete('Inventories', null, {});
     await queryInterface.bulkDelete('Characters', null, {});
     await queryInterface.bulkDelete('Weapons', null, {});
   }

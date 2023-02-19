@@ -1,7 +1,10 @@
+const { Character } = require('../models');
+
 class characterController {
   static async showCharacter(req, res, next) {
     try {
-      res.send('character');
+      const characters = await Character.findAll();
+      res.send(characters);
     } catch (error) {
       next(error);
     }
