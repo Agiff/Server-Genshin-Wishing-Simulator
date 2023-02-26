@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const inventoryController = require('../controllers/inventoryController');
+const InventoryController = require('../controllers/inventoryController');
 
-router.get('/', inventoryController.showInventory);
-router.get('/:id', inventoryController.findInventory);
+router.get('/', InventoryController.showInventory);
+router.get('/:id', InventoryController.findInventory);
 
 module.exports = router;

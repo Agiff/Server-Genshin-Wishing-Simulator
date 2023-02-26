@@ -1,14 +1,16 @@
 const router = require('express').Router();
-const userController = require('../controllers/userController');
+const UserController = require('../controllers/userController');
 const errorHandler = require('../middlewares/errorHandler');
-const userRouter = require('./userRouter');
-const inventoryRouter = require('./inventoryRouter');
+const UserRouter = require('./userRouter');
+const InventoryRouter = require('./inventoryRouter');
+const GachaRouter = require('./gachaRouter');
 const { authentication } = require('../middlewares/authentication');
 
-router.get('/', userController.home);
+router.get('/', UserController.home);
 
-router.use('/users', userRouter);
-router.use('/inventories', authentication, inventoryRouter);
+router.use('/users', UserRouter);
+router.use('/inventories', authentication, InventoryRouter);
+router.use('/gachas', authentication, GachaRouter);
 router.use(errorHandler);
 
 module.exports = router;

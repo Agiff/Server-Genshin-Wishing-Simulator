@@ -1,6 +1,6 @@
 const { User, Inventory, Character, Weapon } = require('../models');
 
-class inventoryController {
+class InventoryController {
   static async showInventory(req, res, next) {
     try {
       const inventories = await Inventory.findAll({
@@ -54,4 +54,4 @@ class inventoryController {
   }
 }
 
-module.exports = inventoryController;
+module.exports = InventoryController;

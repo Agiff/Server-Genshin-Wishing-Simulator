@@ -2,7 +2,7 @@ const { comparePassword } = require('../helpers/bcrypt');
 const { createToken } = require('../helpers/jwt');
 const { User } = require('../models');
 
-class userController {
+class UserController {
   static home(req, res) {
     res.send('home');
   }
@@ -41,4 +41,4 @@ class userController {
   }
 }
 
-module.exports = userController;
+module.exports = UserController;
