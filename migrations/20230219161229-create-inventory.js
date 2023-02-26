@@ -19,6 +19,18 @@ module.exports = {
         onDelete: 'cascade',
         onUpdate: 'cascade'
       },
+      primogem: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      intertwined_fate: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
+      acquaint_fate: {
+        type: Sequelize.INTEGER,
+        allowNull: false
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

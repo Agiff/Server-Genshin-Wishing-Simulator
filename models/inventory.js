@@ -30,6 +30,18 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: { msg: 'The owner is missing' }
       }
     },
+    primogem: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    },
+    intertwined_fate: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    },
+    acquaint_fate: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    }
   }, {
     sequelize,
     modelName: 'Inventory',
