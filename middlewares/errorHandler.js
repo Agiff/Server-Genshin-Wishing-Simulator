@@ -14,6 +14,19 @@ const errorHandler = (err, req, res, next) => {
     case 'UsernameEmailPasswordInvalid':
       res.status(401).json({ message: 'Username/Email or Password is invalid' });
       break;
+
+    case 'Unauthenticated':
+    case 'JsonWebTokenError':
+      res.status(401).json({ message: 'Only registered users can access this page' });
+      break;
+
+    case 'Forbidden':
+      res.status(403).json({ message: 'You are not authorized' });
+      break;
+
+    case 'NotFound':
+      res.status(404).json({ message: 'Data not found' });
+      break;
   
     default:
       res.status(500).json({ message: 'Internal Server Error' });
