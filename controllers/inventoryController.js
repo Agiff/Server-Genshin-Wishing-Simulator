@@ -18,6 +18,7 @@ class inventoryController {
       const inventory = await Inventory.findByPk(id, {
         include: [Character, Weapon]
       })
+      if (!inventory) throw { name: 'NotFound' };
       res.status(200).json(inventory);
     } catch (error) {
       next(error);

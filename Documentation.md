@@ -46,11 +46,23 @@ OR
 }
 OR
 {
-  "message": "username must be unique"
+  "message": "Username is already in use"
 }
 OR
 {
-  "message": "email must be unique"
+  "message": "Email is already in use"
+}
+OR
+{
+  "message": "Please enter a valid email address"
+}
+OR
+{
+  "message": "Username length must be around 4-16 characters"
+}
+OR
+{
+  "message": "Password length must be around 8-32 characters"
 }
 ```
 
@@ -74,7 +86,7 @@ OR
 _Response (200 - OK)_
 ```
 {
-  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjc2ODI1NjA2fQ.YePkiNMmiLn6gJnCpNtquB7SbB3g9NpEsziIZIvU3Go"
+  "access_token": "<your access token>"
 }
 ```
 
@@ -97,9 +109,24 @@ _Response (401 - Unauthorized)_
 _Response (401 - Unauthorized)_
 ```
 {
-  "message": "You're not allowed to access this page"
+  "message": "Only registered users can access this page"
 }
 ```
+
+_Response (403 - Forbidden)_
+```
+{
+  "message": "You are not authorized"
+}
+```
+
+_Response (404 - Not Found)_
+```
+{
+  "message": "Data not found"
+}
+```
+
 _Response (500 - Internal Server Error)_
 ```
 {
