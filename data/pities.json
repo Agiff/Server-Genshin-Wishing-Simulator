@@ -6,8 +6,10 @@
     "weaponLimitedPurplePity": 0,
     "standardGoldPity": 0,
     "standardPurplePity": 0,
-    "guaranteedCharacter": 0,
-    "guaranteedWeapon": 0,
+    "guaranteedGoldCharacter": 0,
+    "guaranteedPurpleCharacter": 0,
+    "guaranteedGoldWeapon": 0,
+    "guaranteedPurpleWeapon": 0,
     "fatePoint": 0,
     "UserId": 1
   },
@@ -18,8 +20,10 @@
     "weaponLimitedPurplePity": 0,
     "standardGoldPity": 0,
     "standardPurplePity": 0,
-    "guaranteedCharacter": 0,
-    "guaranteedWeapon": 0,
+    "guaranteedGoldCharacter": 0,
+    "guaranteedPurpleCharacter": 0,
+    "guaranteedGoldWeapon": 0,
+    "guaranteedPurpleWeapon": 0,
     "fatePoint": 0,
     "UserId": 2
   }

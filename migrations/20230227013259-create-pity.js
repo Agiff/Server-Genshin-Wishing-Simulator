@@ -27,10 +27,16 @@ module.exports = {
       standardPurplePity: {
         type: Sequelize.INTEGER
       },
-      guaranteedCharacter: {
+      guaranteedGoldCharacter: {
         type: Sequelize.INTEGER
       },
-      guaranteedWeapon: {
+      guaranteedPurpleCharacter: {
+        type: Sequelize.INTEGER
+      },
+      guaranteedGoldWeapon: {
+        type: Sequelize.INTEGER
+      },
+      guaranteedPurpleWeapon: {
         type: Sequelize.INTEGER
       },
       fatePoint: {
