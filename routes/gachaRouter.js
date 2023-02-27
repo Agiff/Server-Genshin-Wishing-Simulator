@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const GachaController = require('../controllers/gachaController');
 
-router.get('/', GachaController.startGacha);
+router.get('/:bannerId', GachaController.startGacha);
 
 module.exports = router;
