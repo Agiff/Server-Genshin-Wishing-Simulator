@@ -1,4 +1,4 @@
-const { User, Inventory } = require('../models');
+const { User, Inventory, Pity, Character, Weapon, Banner } = require('../models');
 
 class GachaController {
   static async startGacha (req, res, next) {

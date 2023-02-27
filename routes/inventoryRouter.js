@@ -4,6 +4,6 @@ const { inventoryAuthorization } = require('../middlewares/authorization');
 
 router.get('/', InventoryController.showInventory);
 router.get('/:id', InventoryController.findInventory);
-router.patch('/:id', inventoryAuthorization, InventoryController.updateInventory);
+router.patch('/:id/:type', inventoryAuthorization, InventoryController.updateInventory);
 
 module.exports = router;

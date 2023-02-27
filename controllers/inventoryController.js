@@ -28,7 +28,8 @@ class InventoryController {
   static async updateInventory(req, res, next) {
     try {
       const { id } = req.params;
-      const { primogem, intertwined_fate, acquaint_fate, type } = req.body;
+      const { primogem, intertwined_fate, acquaint_fate } = req.body;
+      const { type } = req.params;
 
       const currentInventory = await Inventory.findByPk(id);
       if (!currentInventory) throw { name: 'NotFound' };
