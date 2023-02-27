@@ -1,0 +1,26 @@
+[
+  {
+    "charLimitedGoldPity": 0,
+    "charLimitedPurplePity": 0,
+    "weaponLimitedGoldPity": 0,
+    "weaponLimitedPurplePity": 0,
+    "standardGoldPity": 0,
+    "standardPurplePity": 0,
+    "guaranteedCharacter": 0,
+    "guaranteedWeapon": 0,
+    "fatePoint": 0,
+    "UserId": 1
+  },
+  {
+    "charLimitedGoldPity": 0,
+    "charLimitedPurplePity": 0,
+    "weaponLimitedGoldPity": 0,
+    "weaponLimitedPurplePity": 0,
+    "standardGoldPity": 0,
+    "standardPurplePity": 0,
+    "guaranteedCharacter": 0,
+    "guaranteedWeapon": 0,
+    "fatePoint": 0,
+    "UserId": 2
+  }
+]

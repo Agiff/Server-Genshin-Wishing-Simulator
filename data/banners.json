@@ -1,0 +1,19 @@
+[
+  {
+    "type": "standard"
+  },
+  {
+    "type": "limited",
+    "rateUpGold": "raiden",
+    "rateUpPurple1": "sara",
+    "rateUpPurple2": "sayu",
+    "rateUpPurple3": "xingqiu"
+  },
+  {
+    "type": "limited",
+    "rateUpGold": "yelan",
+    "rateUpPurple1": "yanfei",
+    "rateUpPurple2": "beidou",
+    "rateUpPurple3": "ningguang"
+  }
+]

@@ -35,10 +35,21 @@ module.exports = {
       return el;
     })
 
+    const banners = require('../data/banners.json').map(el => {
+      el.createdAt = el.updatedAt = new Date();
+      return el;
+    })
+    const pities = require('../data/pities.json').map(el => {
+      el.createdAt = el.updatedAt = new Date();
+      return el;
+    })
+
     await queryInterface.bulkInsert('Users', users, {});
     await queryInterface.bulkInsert('Inventories', inventories, {});
     await queryInterface.bulkInsert('Characters', characters, {});
     await queryInterface.bulkInsert('Weapons', weapons, {});
+    await queryInterface.bulkInsert('Banners', banners, {});
+    await queryInterface.bulkInsert('Pities', pities, {});
   },
 
   async down (queryInterface, Sequelize) {
@@ -52,5 +63,7 @@ module.exports = {
     await queryInterface.bulkDelete('Inventories', null, {});
     await queryInterface.bulkDelete('Characters', null, {});
     await queryInterface.bulkDelete('Weapons', null, {});
+    await queryInterface.bulkDelete('Banners', null, {});
+    await queryInterface.bulkDelete('Pities', null, {});
   }
 };
