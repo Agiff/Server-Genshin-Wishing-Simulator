@@ -28,16 +28,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       guaranteedGoldCharacter: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BOOLEAN
       },
       guaranteedPurpleCharacter: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BOOLEAN
       },
       guaranteedGoldWeapon: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BOOLEAN
       },
       guaranteedPurpleWeapon: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BOOLEAN
       },
       fatePoint: {
         type: Sequelize.INTEGER

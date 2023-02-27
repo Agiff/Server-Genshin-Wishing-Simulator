@@ -77,17 +77,80 @@ class GachaController {
       
       const message = {
         title: 'You won a 3 star',
+        character: '',
+        weapon: '',
         goldPity: currentUser.Pity.charLimitedGoldPity,
         purplePity: currentUser.Pity.charLimitedPurplePity,
+        guaraCharGold: currentUser.Pity.guaranteedGoldCharacter,
+        guaraCharPurple: currentUser.Pity.guaranteedPurpleCharacter,
         rate: goldRate
       };
 
       if (gotPurple) {
         message.title = 'You won a 4 star';
+        const fiftyFifty = Math.ceil(Math.random() * 100);
+        if (fiftyFifty > 50 && !currentUser.Pity.guaranteedPurpleCharacter) {
+          if (currentBanner.type === 'limitedChar') {
+            message.character = 'You lost fifty-fifty on 4 star character';
+            await Pity.update({
+              guaranteedPurpleCharacter: true,
+            }, {
+              where: { UserId: req.user.id }
+            })
+          }
+          if (currentBanner.type === 'limitedWeapon') {
+            message.weapon = 'You lost fifty-fifty on 4 star weapon';
+            await Pity.update({
+              guaranteedPurpleWeapon: true,
+            }, {
+              where: { UserId: req.user.id }
+            })
+          }
+        } else {
+          // TODO: handle weapon banner
+          // TODO: handle standard banner
+          const randomFourStar = Math.ceil(Math.random() * 3);
+          if (randomFourStar === 1) message.character = currentBanner.rateUpPurple1;
+          if (randomFourStar === 2) message.character = currentBanner.rateUpPurple2;
+          if (randomFourStar === 3) message.character = currentBanner.rateUpPurple3;
+          await Pity.update({
+            guaranteedPurpleCharacter: false,
+          }, {
+            where: { UserId: req.user.id }
+          })
+        }
       }
 
       if (gotGold) {
         message.title = 'You won a 5 star';
+        const fiftyFifty = Math.ceil(Math.random() * 100);
+        if (fiftyFifty > 50 && !currentUser.Pity.guaranteedGoldCharacter) {
+          if (currentBanner.type === 'limitedChar') {
+            message.character = 'duaaarrr qiqi';
+            await Pity.update({
+              guaranteedGoldCharacter: true,
+            }, {
+              where: { UserId: req.user.id }
+            })
+          }
+          if (currentBanner.type === 'limitedWeapon') {
+            message.character = 'wgs';
+            await Pity.update({
+              guaranteedGoldWeapon: true,
+            }, {
+              where: { UserId: req.user.id }
+            })
+          }
+        } else {
+          // TODO: handle weapon banner
+          // TODO: handle standard banner
+          message.character = currentBanner.rateUpGold;
+          await Pity.update({
+            guaranteedGoldCharacter: false,
+          }, {
+            where: { UserId: req.user.id }
+          })
+        }
       }
 
       res.status(200).json({ message, result });

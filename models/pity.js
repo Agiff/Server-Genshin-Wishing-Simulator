@@ -20,10 +20,10 @@ module.exports = (sequelize, DataTypes) => {
     weaponLimitedPurplePity: DataTypes.INTEGER,
     standardGoldPity: DataTypes.INTEGER,
     standardPurplePity: DataTypes.INTEGER,
-    guaranteedGoldCharacter: DataTypes.INTEGER,
-    guaranteedPurpleCharacter: DataTypes.INTEGER,
-    guaranteedGoldWeapon: DataTypes.INTEGER,
-    guaranteedPurpleWeapon: DataTypes.INTEGER,
+    guaranteedGoldCharacter: DataTypes.BOOLEAN,
+    guaranteedPurpleCharacter: DataTypes.BOOLEAN,
+    guaranteedGoldWeapon: DataTypes.BOOLEAN,
+    guaranteedPurpleWeapon: DataTypes.BOOLEAN,
     fatePoint: DataTypes.INTEGER,
     UserId: DataTypes.INTEGER
   }, {
