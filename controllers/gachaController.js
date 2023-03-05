@@ -24,6 +24,12 @@ class GachaController {
       const currentUser = await User.findByPk(req.user.id, {
         include: [Pity]
       });
+      if (!currentUser) throw { name: 'NotFound' };
+
+      const inventory = await Inventory.findOne({
+        where: { UserId: currentUser.id }
+      })
+      if (!inventory) throw { name: 'NotFound' };
 
       //Increase Pity Count
       currentUser.Pity.charLimitedGoldPity++;
@@ -119,7 +125,7 @@ class GachaController {
           if (randomFourStar === 1) message.result = currentBanner.rateUpPurple1;
           if (randomFourStar === 2) message.result = currentBanner.rateUpPurple2;
           if (randomFourStar === 3) message.result = currentBanner.rateUpPurple3;
-          message.type = randomFourStar.type;
+          message.type = 'character';
           await Pity.update({
             guaranteedPurpleCharacter: false,
           }, {
@@ -159,6 +165,13 @@ class GachaController {
             where: { UserId: req.user.id }
           })
         }
+      }
+
+      // Save to inventory
+      if (message.type === 'character') {
+        await Character.create({ name: message.result, InventoryId: inventory.id })
+      } else {
+        await Weapon.create({ name: message.result, InventoryId: inventory.id })
       }
 
       res.status(200).json({ message, RNG });
