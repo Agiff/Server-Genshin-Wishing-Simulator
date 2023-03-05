@@ -1,6 +1,6 @@
 const { comparePassword } = require('../helpers/bcrypt');
 const { createToken } = require('../helpers/jwt');
-const { User } = require('../models');
+const { User, Inventory } = require('../models');
 
 class UserController {
   static home(req, res) {
@@ -11,7 +11,17 @@ class UserController {
     try {
       const { username, email, password } = req.body;
       const createdUser = await User.create({ username, email, password });
-      res.status(201).json(createdUser);
+      await Inventory.create({ 
+        UserId: createdUser.id,
+        primogem: 0,
+        intertwined_fate: 0,
+        acquaint_fate: 0
+      })
+      res.status(201).json({
+        id: createdUser.id,
+        username: createdUser.username,
+        email: createdUser.email
+      });
     } catch (error) {
       next(error);
     }

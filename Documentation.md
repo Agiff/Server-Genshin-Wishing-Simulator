@@ -24,10 +24,7 @@ _Response (201 - Created)_
 {
   "id": <given id by system>,
   "username": "<posted username>",
-  "email": "<posted email>",
-  "password": <posted hashed password>,
-  "createdAt": "2023-02-14T17:28:46.674Z",
-  "updatedAt": "2023-02-14T17:28:46.674Z"
+  "email": "<posted email>"
 }
 ```
 
