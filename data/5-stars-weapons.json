@@ -1,181 +1,217 @@
 [
   {
     "name": "a-thousand-floating-dreams",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "amos-bow",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "aqua-simulacra",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "aquila-favonia",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "beacon-of-the-reed-sea",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "calamity-queller",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "elegy-for-the-end",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "engulfing-lightning",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "everlasting-moonglow",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "freedom-sworn",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "haran-geppaku-futsu",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "hunter-s-path",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "kagura's-verity",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "key-of-khaj-nisut",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "light-of-follar-incision",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "lost-prayer-to-the-sacred-winds",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "memory-of-dust",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "mistsplitter-reforged",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "polar-star",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "primordial-jade-cutter",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "primordial-jade-winged-spear",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "redhorn-stonethresher",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "skyward-atlas",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "skyward-blade",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "skyward-harp",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "skyward-pride",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "skyward-spine",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "song-of-broken-pines",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "staff-of-homa",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "staff-of-the-scarlet-sands",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "summit-shaper",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "the-unforged",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "thundering-pulse",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "tulaytullah-s-remembrance",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "vortex-vanquisher",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "wolf-s-gravestone",
+    "type": "weapon",
     "limited": false,
     "available": true
   }

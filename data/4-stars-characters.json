@@ -1,130 +1,162 @@
 [
   {
     "name": "amber",
+    "type": "character",
     "available": true
   },
   {
     "name": "barbara",
+    "type": "character",
     "available": true
   },
   {
     "name": "beidou",
+    "type": "character",
     "available": true
   },
   {
     "name": "bennett",
+    "type": "character",
     "available": true
   },
   {
     "name": "candace",
+    "type": "character",
     "available": false
   },
   {
     "name": "chongyun",
+    "type": "character",
     "available": true
   },
   {
     "name": "collei",
+    "type": "character",
     "available": true
   },
   {
     "name": "diona",
+    "type": "character",
     "available": true
   },
   {
     "name": "dori",
+    "type": "character",
     "available": false
   },
   {
     "name": "faruzan",
+    "type": "character",
     "available": false
   },
   {
     "name": "fischl",
+    "type": "character",
     "available": true
   },
   {
     "name": "gorou",
+    "type": "character",
     "available": true
   },
   {
     "name": "kaeya",
+    "type": "character",
     "available": true
   },
   {
     "name": "sara",
+    "type": "character",
     "available": true
   },
   {
     "name": "kuki-shinobu",
+    "type": "character",
     "available": true
   },
   {
     "name": "layla",
+    "type": "character",
     "available": false
   },
   {
     "name": "lisa",
+    "type": "character",
     "available": true
   },
   {
     "name": "mika",
+    "type": "character",
     "available": false
   },
   {
     "name": "ningguang",
+    "type": "character",
     "available": true
   },
   {
     "name": "noelle",
+    "type": "character",
     "available": true
   },
   {
     "name": "razor",
+    "type": "character",
     "available": true
   },
   {
     "name": "rosaria",
+    "type": "character",
     "available": true
   },
   {
     "name": "sayu",
+    "type": "character",
     "available": true
   },
   {
     "name": "shikanoin-heizou",
+    "type": "character",
     "available": true
   },
   {
     "name": "sucrose",
+    "type": "character",
     "available": true
   },
   {
     "name": "thoma",
+    "type": "character",
     "available": true
   },
   {
     "name": "xiangling",
+    "type": "character",
     "available": true
   },
   {
     "name": "xingqiu",
+    "type": "character",
     "available": true
   },
   {
     "name": "xinyan",
+    "type": "character",
     "available": true
   },
   {
     "name": "yanfei",
+    "type": "character",
     "available": true
   },
   {
     "name": "yaoyao",
+    "type": "character",
     "available": false
   },
   {
     "name": "yun-jin",
+    "type": "character",
     "available": true
   }
 ]

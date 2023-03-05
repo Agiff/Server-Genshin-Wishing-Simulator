@@ -1,161 +1,193 @@
 [
   {
     "name": "albedo",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "alhaitham",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "aloy",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "arataki-itto",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "cyno",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "dehya",
+    "type": "character",
     "limited": false,
     "available": false
   },
   {
     "name": "diluc",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "eula",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "ganyu",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "hu-tao",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "jean",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "kazuha",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "ayaka",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "ayato",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "keqing",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "klee",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "mona",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "nahida",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "nilou",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "qiqi",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "raiden",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "kokomi",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "shenhe",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "tartaglia",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "tighnari",
+    "type": "character",
     "limited": false,
     "available": true
   },
   {
     "name": "venti",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "wanderer",
+    "type": "character",
     "limited": true,
     "available": false
   },
   {
     "name": "xiao",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "yae-miko",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "yelan",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "yoimiya",
+    "type": "character",
     "limited": true,
     "available": true
   },
   {
     "name": "zhongli",
+    "type": "character",
     "limited": true,
     "available": true
   }

@@ -1,150 +1,180 @@
 [
   {
     "name": "akuoumaru",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "alley-hunter",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "dragon-s-bane",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "eye-of-perception",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "favonius-codex",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "favonius-greatsword",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "favonius-lance",
+    "type": "weapon",
     "limited": false
   },
   {
     "name": "favonius-sword",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "favonius-warbow",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "lion-s-roar",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "lithic-blade",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "lithic-spear",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "makhaira-aquamarine",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "mitternachts-waltz",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "mouun's-moon",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "rainslasher",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "rust",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "sacrificial-bow",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "sacrificial-fragments",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "sacrificial-greatsword",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "sacrificial-sword",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "the-alley-flash",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "the-bell",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "the-flute",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "the-stringless",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "the-widsith",
+    "type": "weapon",
     "limited": false,
     "available": true
   },
   {
     "name": "wandering-evenstar",
+    "type": "weapon",
     "limited": true,
     "available": false
   },
   {
     "name": "wavebreaker's-fin",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "wine-and-song",
+    "type": "weapon",
     "limited": true,
     "available": true
   },
   {
     "name": "xiphos-moonlight",
+    "type": "weapon",
     "limited": true,
     "available": false
   }

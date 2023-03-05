@@ -12,6 +12,9 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      type: {
+        type: Sequelize.STRING
+      },
       limited: {
         type: Sequelize.BOOLEAN
       },

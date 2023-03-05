@@ -1,80 +1,106 @@
 [
   {
-    "name": "amber-catalyst"
+    "name": "amber-catalyst",
+    "type": "weapon"
   },
   {
-    "name": "black-tassel"
+    "name": "black-tassel",
+    "type": "weapon"
   },
   {
-    "name": "bloodtainted-greatsword"
+    "name": "bloodtainted-greatsword",
+    "type": "weapon"
   },
   {
-    "name": "cool-steel"
+    "name": "cool-steel",
+    "type": "weapon"
   },
   {
-    "name": "debate-club"
+    "name": "debate-club",
+    "type": "weapon"
   },
   {
-    "name": "ebony-bow"
+    "name": "ebony-bow",
+    "type": "weapon"
   },
   {
-    "name": "emerald-orb"
+    "name": "emerald-orb",
+    "type": "weapon"
   },
   {
-    "name": "ferrous-shadow"
+    "name": "ferrous-shadow",
+    "type": "weapon"
   },
   {
-    "name": "fillet-blade"
+    "name": "fillet-blade",
+    "type": "weapon"
   },
   {
-    "name": "halberd"
+    "name": "halberd",
+    "type": "weapon"
   },
   {
-    "name": "harbinger-of-dawn"
+    "name": "harbinger-of-dawn",
+    "type": "weapon"
   },
   {
-    "name": "magic-guide"
+    "name": "magic-guide",
+    "type": "weapon"
   },
   {
-    "name": "messenger"
+    "name": "messenger",
+    "type": "weapon"
   },
   {
-    "name": "otherworldly-story"
+    "name": "otherworldly-story",
+    "type": "weapon"
   },
   {
-    "name": "quartz"
+    "name": "quartz",
+    "type": "weapon"
   },
   {
-    "name": "raven-bow"
+    "name": "raven-bow",
+    "type": "weapon"
   },
   {
-    "name": "recurve-bow"
+    "name": "recurve-bow",
+    "type": "weapon"
   },
   {
-    "name": "sharpshooter-s-oath"
+    "name": "sharpshooter-s-oath",
+    "type": "weapon"
   },
   {
-    "name": "skyrider-greatsword"
+    "name": "skyrider-greatsword",
+    "type": "weapon"
   },
   {
-    "name": "skyrider-sword"
+    "name": "skyrider-sword",
+    "type": "weapon"
   },
   {
-    "name": "slingshot"
+    "name": "slingshot",
+    "type": "weapon"
   },
   {
-    "name": "thrilling-tales-of-dragon-slayers"
+    "name": "thrilling-tales-of-dragon-slayers",
+    "type": "weapon"
   },
   {
-    "name": "traveler-s-handy-sword"
+    "name": "traveler-s-handy-sword",
+    "type": "weapon"
   },
   {
-    "name": "twin-nephrite"
+    "name": "twin-nephrite",
+    "type": "weapon"
   },
   {
-    "name": "white-iron-greatsword"
+    "name": "white-iron-greatsword",
+    "type": "weapon"
   },
   {
-    "name": "white-tassel"
+    "name": "white-tassel",
+    "type": "weapon"
   }
 ]

@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER
     },
     name: DataTypes.STRING,
+    type: DataTypes.STRING,
     limited: DataTypes.BOOLEAN,
     available: DataTypes.BOOLEAN
   }, {

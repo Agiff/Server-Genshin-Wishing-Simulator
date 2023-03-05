@@ -71,6 +71,7 @@ class GachaController {
       const message = {
         title: 'You won a 3 star',
         result: randomThreeStar.name,
+        type: randomThreeStar.type,
         goldPity: currentUser.Pity.charLimitedGoldPity,
         purplePity: currentUser.Pity.charLimitedPurplePity,
         guaraCharGold: currentUser.Pity.guaranteedGoldCharacter,
@@ -107,6 +108,7 @@ class GachaController {
           }
 
           message.result = randomFourStar.name;
+          message.type = randomFourStar.type;
           await Pity.update({
             guaranteedPurpleCharacter: true,
           }, {
@@ -117,6 +119,7 @@ class GachaController {
           if (randomFourStar === 1) message.result = currentBanner.rateUpPurple1;
           if (randomFourStar === 2) message.result = currentBanner.rateUpPurple2;
           if (randomFourStar === 3) message.result = currentBanner.rateUpPurple3;
+          message.type = randomFourStar.type;
           await Pity.update({
             guaranteedPurpleCharacter: false,
           }, {
@@ -141,6 +144,7 @@ class GachaController {
           const randomFiveStarCharacters = fiveStarCharacters[randomIndex];
 
           message.result = randomFiveStarCharacters.name;
+          message.type = randomFiveStarCharacters.type;
           await Pity.update({
             guaranteedGoldCharacter: true,
           }, {
@@ -148,6 +152,7 @@ class GachaController {
           })
         } else {
           message.result = currentBanner.rateUpGold;
+          message.type = 'character';
           await Pity.update({
             guaranteedGoldCharacter: false,
           }, {
