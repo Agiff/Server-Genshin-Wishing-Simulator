@@ -36,6 +36,10 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: { msg: 'The owner is missing' }
       }
     },
+    constellation: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    }
   }, {
     sequelize,
     modelName: 'Character',

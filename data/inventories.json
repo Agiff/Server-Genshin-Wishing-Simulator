@@ -3,12 +3,14 @@
     "UserId": 1,
     "primogem": 100000,
     "intertwined_fate": 200,
-    "acquaint_fate": 100
+    "acquaint_fate": 100,
+    "starglitter": 50
   },
   {
     "UserId": 2,
     "primogem": 10000,
     "intertwined_fate": 50,
-    "acquaint_fate": 50
+    "acquaint_fate": 50,
+    "starglitter": 500
   }
 ]

@@ -41,6 +41,10 @@ module.exports = (sequelize, DataTypes) => {
     acquaint_fate: {
       allowNull: false,
       type: DataTypes.INTEGER
+    },
+    starglitter: {
+      allowNull: false,
+      type: DataTypes.INTEGER
     }
   }, {
     sequelize,
