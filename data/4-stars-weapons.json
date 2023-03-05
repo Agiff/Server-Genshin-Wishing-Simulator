@@ -1,0 +1,130 @@
+[
+  {
+    "name": "amber",
+    "available": true
+  },
+  {
+    "name": "barbara",
+    "available": true
+  },
+  {
+    "name": "beidou",
+    "available": true
+  },
+  {
+    "name": "bennett",
+    "available": true
+  },
+  {
+    "name": "candace",
+    "available": false
+  },
+  {
+    "name": "chongyun",
+    "available": true
+  },
+  {
+    "name": "collei",
+    "available": true
+  },
+  {
+    "name": "diona",
+    "available": true
+  },
+  {
+    "name": "dori",
+    "available": false
+  },
+  {
+    "name": "faruzan",
+    "available": false
+  },
+  {
+    "name": "fischl",
+    "available": true
+  },
+  {
+    "name": "gorou",
+    "available": true
+  },
+  {
+    "name": "kaeya",
+    "available": true
+  },
+  {
+    "name": "sara",
+    "available": true
+  },
+  {
+    "name": "kuki-shinobu",
+    "available": true
+  },
+  {
+    "name": "layla",
+    "available": false
+  },
+  {
+    "name": "lisa",
+    "available": true
+  },
+  {
+    "name": "mika",
+    "available": false
+  },
+  {
+    "name": "ningguang",
+    "available": true
+  },
+  {
+    "name": "noelle",
+    "available": true
+  },
+  {
+    "name": "razor",
+    "available": true
+  },
+  {
+    "name": "rosaria",
+    "available": true
+  },
+  {
+    "name": "sayu",
+    "available": true
+  },
+  {
+    "name": "shikanoin-heizou",
+    "available": true
+  },
+  {
+    "name": "sucrose",
+    "available": true
+  },
+  {
+    "name": "thoma",
+    "available": true
+  },
+  {
+    "name": "xiangling",
+    "available": true
+  },
+  {
+    "name": "xingqiu",
+    "available": true
+  },
+  {
+    "name": "xinyan",
+    "available": true
+  },
+  {
+    "name": "yanfei",
+    "available": true
+  },
+  {
+    "name": "yaoyao",
+    "available": false
+  },
+  {
+    "name": "yun-jin",
+    "available": true
+  }
+]

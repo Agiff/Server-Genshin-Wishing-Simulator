@@ -1,0 +1,182 @@
+[
+  {
+    "name": "a-thousand-floating-dreams",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "amos-bow",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "aqua-simulacra",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "aquila-favonia",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "beacon-of-the-reed-sea",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "calamity-queller",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "elegy-for-the-end",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "engulfing-lightning",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "everlasting-moonglow",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "freedom-sworn",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "haran-geppaku-futsu",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "hunter-s-path",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "kagura's-verity",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "key-of-khaj-nisut",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "light-of-follar-incision",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "lost-prayer-to-the-sacred-winds",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "memory-of-dust",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "mistsplitter-reforged",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "polar-star",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "primordial-jade-cutter",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "primordial-jade-winged-spear",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "redhorn-stonethresher",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "skyward-atlas",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "skyward-blade",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "skyward-harp",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "skyward-pride",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "skyward-spine",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "song-of-broken-pines",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "staff-of-homa",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "staff-of-the-scarlet-sands",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "summit-shaper",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "the-unforged",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "thundering-pulse",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "tulaytullah-s-remembrance",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "vortex-vanquisher",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "wolf-s-gravestone",
+    "limited": false,
+    "available": true
+  }
+]

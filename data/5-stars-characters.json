@@ -1,0 +1,162 @@
+[
+  {
+    "name": "albedo",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "alhaitham",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "aloy",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "arataki-itto",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "cyno",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "dehya",
+    "limited": false,
+    "available": false
+  },
+  {
+    "name": "diluc",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "eula",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "ganyu",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "hu-tao",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "jean",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "kazuha",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "ayaka",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "ayato",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "keqing",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "klee",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "mona",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "nahida",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "nilou",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "qiqi",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "raiden",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "kokomi",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "shenhe",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "tartaglia",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "tighnari",
+    "limited": false,
+    "available": true
+  },
+  {
+    "name": "venti",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "wanderer",
+    "limited": true,
+    "available": false
+  },
+  {
+    "name": "xiao",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "yae-miko",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "yelan",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "yoimiya",
+    "limited": true,
+    "available": true
+  },
+  {
+    "name": "zhongli",
+    "limited": true,
+    "available": true
+  }
+]
