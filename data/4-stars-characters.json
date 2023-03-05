@@ -1,151 +1,130 @@
 [
   {
-    "name": "akuoumaru",
-    "limited": true,
+    "name": "amber",
     "available": true
   },
   {
-    "name": "alley-hunter",
-    "limited": true,
+    "name": "barbara",
     "available": true
   },
   {
-    "name": "dragon-s-bane",
-    "limited": false,
+    "name": "beidou",
     "available": true
   },
   {
-    "name": "eye-of-perception",
-    "limited": false,
+    "name": "bennett",
     "available": true
   },
   {
-    "name": "favonius-codex",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "favonius-greatsword",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "favonius-lance",
-    "limited": false
-  },
-  {
-    "name": "favonius-sword",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "favonius-warbow",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "lion-s-roar",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "lithic-blade",
-    "limited": true,
-    "available": true
-  },
-  {
-    "name": "lithic-spear",
-    "limited": true,
-    "available": true
-  },
-  {
-    "name": "makhaira-aquamarine",
-    "limited": true,
+    "name": "candace",
     "available": false
   },
   {
-    "name": "mitternachts-waltz",
-    "limited": true,
+    "name": "chongyun",
     "available": true
   },
   {
-    "name": "mouun's-moon",
-    "limited": true,
+    "name": "collei",
     "available": true
   },
   {
-    "name": "rainslasher",
-    "limited": false,
+    "name": "diona",
     "available": true
   },
   {
-    "name": "rust",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "sacrificial-bow",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "sacrificial-fragments",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "sacrificial-greatsword",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "sacrificial-sword",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "the-alley-flash",
-    "limited": true,
-    "available": true
-  },
-  {
-    "name": "the-bell",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "the-flute",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "the-stringless",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "the-widsith",
-    "limited": false,
-    "available": true
-  },
-  {
-    "name": "wandering-evenstar",
-    "limited": true,
+    "name": "dori",
     "available": false
   },
   {
-    "name": "wavebreaker's-fin",
-    "limited": true,
-    "available": true
-  },
-  {
-    "name": "wine-and-song",
-    "limited": true,
-    "available": true
-  },
-  {
-    "name": "xiphos-moonlight",
-    "limited": true,
+    "name": "faruzan",
     "available": false
+  },
+  {
+    "name": "fischl",
+    "available": true
+  },
+  {
+    "name": "gorou",
+    "available": true
+  },
+  {
+    "name": "kaeya",
+    "available": true
+  },
+  {
+    "name": "sara",
+    "available": true
+  },
+  {
+    "name": "kuki-shinobu",
+    "available": true
+  },
+  {
+    "name": "layla",
+    "available": false
+  },
+  {
+    "name": "lisa",
+    "available": true
+  },
+  {
+    "name": "mika",
+    "available": false
+  },
+  {
+    "name": "ningguang",
+    "available": true
+  },
+  {
+    "name": "noelle",
+    "available": true
+  },
+  {
+    "name": "razor",
+    "available": true
+  },
+  {
+    "name": "rosaria",
+    "available": true
+  },
+  {
+    "name": "sayu",
+    "available": true
+  },
+  {
+    "name": "shikanoin-heizou",
+    "available": true
+  },
+  {
+    "name": "sucrose",
+    "available": true
+  },
+  {
+    "name": "thoma",
+    "available": true
+  },
+  {
+    "name": "xiangling",
+    "available": true
+  },
+  {
+    "name": "xingqiu",
+    "available": true
+  },
+  {
+    "name": "xinyan",
+    "available": true
+  },
+  {
+    "name": "yanfei",
+    "available": true
+  },
+  {
+    "name": "yaoyao",
+    "available": false
+  },
+  {
+    "name": "yun-jin",
+    "available": true
   }
 ]

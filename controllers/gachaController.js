@@ -1,5 +1,17 @@
 const axios = require('axios');
-const { User, Inventory, Pity, Character, Weapon, Banner } = require('../models');
+const {
+  User, 
+  Inventory,
+  Pity,
+  Character,
+  Weapon,
+  Banner,
+  ThreeStar,
+  FourStarCharacter,
+  FourStarWeapon,
+  FiveStarCharacter,
+  FiveStarWeapon
+} = require('../models');
 
 class GachaController {
   static async startGachaLimitedCharacter (req, res, next) {
@@ -21,14 +33,14 @@ class GachaController {
       let goldRate = 600;
       const purpleRate = 5100;
 
-      const result = Math.ceil(Math.random() * rate);
+      const RNG = Math.ceil(Math.random() * rate);
 
       let gotGold = false;
       let gotPurple = false;
 
       if (currentUser.Pity.charLimitedPurplePity >= 10) { //Guara at 10 pull
         gotPurple = true;
-      } else if (result <= purpleRate) { 
+      } else if (RNG <= purpleRate) { 
         gotPurple = true;
       }
 
@@ -39,7 +51,7 @@ class GachaController {
       if (currentUser.Pity.charLimitedGoldPity >= 90) { //Guara 5 star at 90
         gotPurple = false;
         gotGold = true;
-      } else if (result <= goldRate) {
+      } else if (RNG <= goldRate) {
         gotPurple = false;
         gotGold = true;
       }
@@ -52,22 +64,49 @@ class GachaController {
         where: { UserId: req.user.id }
       })
 
+      const threeStars = await ThreeStar.findAll();
+      const randomIndex = Math.floor(Math.random() * threeStars.length);
+      const randomThreeStar = threeStars[randomIndex];
+  
       const message = {
         title: 'You won a 3 star',
-        character: '',
-        weapon: '',
+        result: randomThreeStar.name,
         goldPity: currentUser.Pity.charLimitedGoldPity,
         purplePity: currentUser.Pity.charLimitedPurplePity,
         guaraCharGold: currentUser.Pity.guaranteedGoldCharacter,
         guaraCharPurple: currentUser.Pity.guaranteedPurpleCharacter,
-        rate: goldRate
+        goldRate: goldRate,
+        purpleRate: purpleRate
       };
 
       if (gotPurple) {
         message.title = 'You won a 4 star';
         const fiftyFifty = Math.ceil(Math.random() * 100);
         if (fiftyFifty > 50 && !currentUser.Pity.guaranteedPurpleCharacter) {
-          message.character = 'You lost fifty-fifty on 4 star character';
+          const fourStarCharacters = await FourStarCharacter.findAll({
+            where: { available: true }
+          })
+
+          const fourStarWeapons = await FourStarWeapon.findAll({
+            where: { available: true, limited: false }
+          })
+  
+          const fourStars = [ ...fourStarCharacters, ...fourStarWeapons ];
+
+          let randomFourStar;
+          let findFourStar = true;
+
+          while (findFourStar) {
+            const randomIndex = Math.floor(Math.random() * fourStars.length);
+            randomFourStar = fourStars[randomIndex];
+            if (randomFourStar !== currentBanner.rateUpPurple1 && 
+              randomFourStar !== currentBanner.rateUpPurple2 &&
+              randomFourStar !== currentBanner.rateUpPurple3) {
+              findFourStar = false;
+            }
+          }
+
+          message.result = randomFourStar.name;
           await Pity.update({
             guaranteedPurpleCharacter: true,
           }, {
@@ -75,9 +114,9 @@ class GachaController {
           })
         } else {
           const randomFourStar = Math.ceil(Math.random() * 3);
-          if (randomFourStar === 1) message.character = currentBanner.rateUpPurple1;
-          if (randomFourStar === 2) message.character = currentBanner.rateUpPurple2;
-          if (randomFourStar === 3) message.character = currentBanner.rateUpPurple3;
+          if (randomFourStar === 1) message.result = currentBanner.rateUpPurple1;
+          if (randomFourStar === 2) message.result = currentBanner.rateUpPurple2;
+          if (randomFourStar === 3) message.result = currentBanner.rateUpPurple3;
           await Pity.update({
             guaranteedPurpleCharacter: false,
           }, {
@@ -86,18 +125,29 @@ class GachaController {
         }
       }
 
+      // const fiveStarWeapons = await FiveStarWeapon.findAll({
+      //   where: { available: true }
+      // })
+
       if (gotGold) {
         message.title = 'You won a 5 star';
         const fiftyFifty = Math.ceil(Math.random() * 100);
         if (fiftyFifty > 50 && !currentUser.Pity.guaranteedGoldCharacter) {
-          message.character = 'duaaarrr qiqi';
+          const fiveStarCharacters = await FiveStarCharacter.findAll({
+            where: { available: true, limited: false }
+          })
+
+          const randomIndex = Math.floor(Math.random() * fiveStarCharacters.length);
+          const randomFiveStarCharacters = fiveStarCharacters[randomIndex];
+
+          message.result = randomFiveStarCharacters.name;
           await Pity.update({
             guaranteedGoldCharacter: true,
           }, {
             where: { UserId: req.user.id }
           })
         } else {
-          message.character = currentBanner.rateUpGold;
+          message.result = currentBanner.rateUpGold;
           await Pity.update({
             guaranteedGoldCharacter: false,
           }, {
@@ -106,7 +156,7 @@ class GachaController {
         }
       }
 
-      res.status(200).json({ message, result });
+      res.status(200).json({ message, RNG });
     } catch (error) {
       next(error);
     }
