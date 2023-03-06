@@ -101,6 +101,36 @@ _Response (401 - Unauthorized)_
 }
 ```
 
+### GET /gachas/limited/:bannerId
+
+> Start gacha for a limited banner
+
+_Request Headers_
+```
+{
+  "access_token": "<your access token>"
+}
+```
+
+_Response (200 - OK)_
+```
+{
+  "result": {
+    "title": "Purple Star",
+    "obtained": "sara",
+    "starglitter": 5,
+    "type": "character",
+    "goldPity": 13,
+    "purplePity": 10,
+    "guaraCharGold": false,
+    "guaraCharPurple": false,
+    "goldRate": 600,
+    "purpleRate": 5100
+  },
+  "RNG": 61566
+}
+```
+
 ### Global Error
 
 _Response (401 - Unauthorized)_
