@@ -15,7 +15,8 @@ class UserController {
         UserId: createdUser.id,
         primogem: 0,
         intertwined_fate: 0,
-        acquaint_fate: 0
+        acquaint_fate: 0,
+        starglitter: 0
       })
       res.status(201).json({
         id: createdUser.id,
