@@ -76,9 +76,9 @@ class GachaController {
       const randomIndex = Math.floor(Math.random() * threeStars.length);
       const randomThreeStar = threeStars[randomIndex];
   
-      const message = {
+      const result = {
         title: 'Blue Star',
-        result: randomThreeStar.name,
+        obtained: randomThreeStar.name,
         starglitter: 0,
         type: randomThreeStar.type,
         goldPity: currentUser.Pity.charLimitedGoldPity,
@@ -92,7 +92,7 @@ class GachaController {
       let ownChar = false;
 
       if (gotPurple) {
-        message.title = 'Purple Star';
+        result.title = 'Purple Star';
         const fiftyFifty = Math.ceil(Math.random() * 100);
         if (fiftyFifty > 50 && !currentUser.Pity.guaranteedPurpleCharacter) {
           const fourStarCharacters = await FourStarCharacter.findAll({
@@ -118,9 +118,9 @@ class GachaController {
             }
           }
 
-          message.result = randomFourStar.name;
-          message.type = randomFourStar.type;
-          ownChar = currentInventory.Characters.find(el => el.name === message.result);
+          result.obtained = randomFourStar.name;
+          result.type = randomFourStar.type;
+          ownChar = currentInventory.Characters.find(el => el.name === result.obtained);
           await Pity.update({
             guaranteedPurpleCharacter: true,
           }, {
@@ -128,11 +128,11 @@ class GachaController {
           })
         } else {
           const randomFourStar = Math.ceil(Math.random() * 3);
-          if (randomFourStar === 1) message.result = currentBanner.rateUpPurple1;
-          if (randomFourStar === 2) message.result = currentBanner.rateUpPurple2;
-          if (randomFourStar === 3) message.result = currentBanner.rateUpPurple3;
-          message.type = 'character';
-          ownChar = currentInventory.Characters.find(el => el.name === message.result);
+          if (randomFourStar === 1) result.obtained = currentBanner.rateUpPurple1;
+          if (randomFourStar === 2) result.obtained = currentBanner.rateUpPurple2;
+          if (randomFourStar === 3) result.obtained = currentBanner.rateUpPurple3;
+          result.type = 'character';
+          ownChar = currentInventory.Characters.find(el => el.name === result.obtained);
           await Pity.update({
             guaranteedPurpleCharacter: false,
           }, {
@@ -146,7 +146,7 @@ class GachaController {
       // })
 
       if (gotGold) {
-        message.title = 'Gold Star';
+        result.title = 'Gold Star';
         const fiftyFifty = Math.ceil(Math.random() * 100);
         if (fiftyFifty > 50 && !currentUser.Pity.guaranteedGoldCharacter) {
           const fiveStarCharacters = await FiveStarCharacter.findAll({
@@ -156,18 +156,18 @@ class GachaController {
           const randomIndex = Math.floor(Math.random() * fiveStarCharacters.length);
           const randomFiveStarCharacters = fiveStarCharacters[randomIndex];
 
-          message.result = randomFiveStarCharacters.name;
-          message.type = randomFiveStarCharacters.type;
-          ownChar = currentInventory.Characters.find(el => el.name === message.result);
+          result.obtained = randomFiveStarCharacters.name;
+          result.type = randomFiveStarCharacters.type;
+          ownChar = currentInventory.Characters.find(el => el.name === result.obtained);
           await Pity.update({
             guaranteedGoldCharacter: true,
           }, {
             where: { UserId: currentUser.id }
           })
         } else {
-          message.result = currentBanner.rateUpGold;
-          message.type = 'character';
-          ownChar = currentInventory.Characters.find(el => el.name === message.result);
+          result.obtained = currentBanner.rateUpGold;
+          result.type = 'character';
+          ownChar = currentInventory.Characters.find(el => el.name === result.obtained);
           await Pity.update({
             guaranteedGoldCharacter: false,
           }, {
@@ -177,74 +177,74 @@ class GachaController {
       }
 
       // Save to inventory
-      if (message.type === 'character') {
+      if (result.type === 'character') {
         if (!ownChar) {
-          await Character.create({ name: message.result, InventoryId: currentInventory.id, constellation: 0 });
-          if (message.title === 'Purple Star') {
+          await Character.create({ name: result.obtained, InventoryId: currentInventory.id, constellation: 0 });
+          if (result.title === 'Purple Star') {
             await Inventory.update({
               starglitter: currentInventory.starglitter + 2,
             }, {
               where: { UserId: currentUser.id }
             })
-            message.starglitter = 2;
-          } else if (message.title === 'Gold Star') {
+            result.starglitter = 2;
+          } else if (result.title === 'Gold Star') {
             await Inventory.update({
               starglitter: currentInventory.starglitter + 5,
             }, {
               where: { UserId: currentUser.id }
             })
-            message.starglitter = 5;
+            result.starglitter = 5;
           }
         } else {
-          const currentChar = currentInventory.Characters.find(el => el.name === message.result);
+          const currentChar = currentInventory.Characters.find(el => el.name === result.obtained);
           if (currentChar.constellation >= 6) {
-            if (message.title === 'Purple Star') {
+            if (result.title === 'Purple Star') {
               await Inventory.update({
                 starglitter: currentInventory.starglitter + 5,
               }, {
                 where: { UserId: currentUser.id }
               })
-              message.starglitter = 5;
-            } else if (message.title === 'Gold Star') {
+              result.starglitter = 5;
+            } else if (result.title === 'Gold Star') {
               await Inventory.update({
                 starglitter: currentInventory.starglitter + 25,
               }, {
                 where: { UserId: currentUser.id }
               })
-              message.starglitter = 25;
+              result.starglitter = 25;
             }
           } else {
             await Character.update({ constellation: currentChar.constellation + 1 }, { where: { name: currentChar.name, InventoryId: currentInventory.id } });
-            if (message.title === 'Purple Star') {
+            if (result.title === 'Purple Star') {
               await Inventory.update({
                 starglitter: currentInventory.starglitter + 2,
               }, {
                 where: { UserId: currentUser.id }
               })
-              message.starglitter = 2;
-            } else if (message.title === 'Gold Star') {
+              result.starglitter = 2;
+            } else if (result.title === 'Gold Star') {
               await Inventory.update({
                 starglitter: currentInventory.starglitter + 5,
               }, {
                 where: { UserId: currentUser.id }
               })
-              message.starglitter = 5;
+              result.starglitter = 5;
             }
           }
         }
       } else {
-        await Weapon.create({ name: message.result, InventoryId: currentInventory.id })
-        if (message.title === 'Purple Star') {
+        await Weapon.create({ name: result.obtained, InventoryId: currentInventory.id })
+        if (result.title === 'Purple Star') {
           await Inventory.update({
             starglitter: currentInventory.starglitter + 2,
           }, {
             where: { UserId: currentUser.id }
           })
-          message.starglitter = 2;
+          result.starglitter = 2;
         }
       }
 
-      res.status(200).json({ message, RNG });
+      res.status(200).json({ result, RNG });
     } catch (error) {
       next(error);
     }
