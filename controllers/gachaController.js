@@ -1,4 +1,3 @@
-const axios = require('axios');
 const {
   User, 
   Inventory,
@@ -56,9 +55,11 @@ class GachaController {
       }
 
       if (currentUser.Pity.charLimitedGoldPity >= 90) { //Guara 5 star at 90
+        currentUser.Pity.charLimitedPurplePity--;
         gotPurple = false;
         gotGold = true;
       } else if (RNG <= goldRate) {
+        currentUser.Pity.charLimitedPurplePity--;
         gotPurple = false;
         gotGold = true;
       }
