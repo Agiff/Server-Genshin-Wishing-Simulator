@@ -25,6 +25,9 @@ module.exports = {
       rateUpPurple3: {
         type: Sequelize.STRING
       },
+      bannerImageUrl: {
+        type: Sequelize.TEXT
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

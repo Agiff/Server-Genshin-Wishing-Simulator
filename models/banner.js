@@ -38,6 +38,10 @@ module.exports = (sequelize, DataTypes) => {
     rateUpPurple3: {
       allowNull: false,
       type: DataTypes.STRING
+    },
+    bannerImageUrl: {
+      allowNull: false,
+      type: DataTypes.TEXT
     }
   }, {
     sequelize,

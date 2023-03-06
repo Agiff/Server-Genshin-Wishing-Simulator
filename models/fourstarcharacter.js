@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: DataTypes.STRING,
     type: DataTypes.STRING,
-    available: DataTypes.BOOLEAN
+    available: DataTypes.BOOLEAN,
+    imageUrl: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'FourStarCharacter',

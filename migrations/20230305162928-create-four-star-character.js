@@ -21,6 +21,9 @@ module.exports = {
       available: {
         type: Sequelize.BOOLEAN
       },
+      imageUrl: {
+        type: Sequelize.TEXT
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
