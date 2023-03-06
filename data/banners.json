@@ -1,19 +1,158 @@
 [
   {
-    "type": "standard"
+    "type": "standard",
+    "bannerImageUrl": "https://cdn.discordapp.com/attachments/1082293161440841789/1082320231709540403/image.png"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "venti",
+    "rateUpPurple1": "barbara",
+    "rateUpPurple2": "fischl",
+    "rateUpPurple3": "chongyun",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Ballad_in_Goblets.png"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "klee",
+    "rateUpPurple1": "noelle",
+    "rateUpPurple2": "xingqiu",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-07_Sparkling_Steps.png"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "tartaglia",
+    "rateUpPurple1": "ningguang",
+    "rateUpPurple2": "diona",
+    "rateUpPurple3": "beidou",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-11-10_Farewell_of_Snezhnaya.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "zhongli",
+    "rateUpPurple1": "xinyan",
+    "rateUpPurple2": "chongyun",
+    "rateUpPurple3": "razor",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/2020-12-02_Gentry_of_Hermitage.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "albedo",
+    "rateUpPurple1": "fischl",
+    "rateUpPurple2": "sucrose",
+    "rateUpPurple3": "bennett",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2020/Secretum_Secretorum.png"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "ganyu",
+    "rateUpPurple1": "noelle",
+    "rateUpPurple2": "xingqiu",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-01-13_Adrift_in_the_Harbor.jpeg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "xiao",
+    "rateUpPurple1": "diona",
+    "rateUpPurple2": "beidou",
+    "rateUpPurple3": "xinyan",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-02-03_Invitation_to_Mundane_Life.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "hu-tao",
+    "rateUpPurple1": "xingqiu",
+    "rateUpPurple2": "chongyun",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-03-02-MomentOfBloom.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "eula",
+    "rateUpPurple1": "xingqiu",
+    "rateUpPurple2": "beidou",
+    "rateUpPurple3": "xinyan",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-05-19_Born_of_Ocean_Swell.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "kazuha",
+    "rateUpPurple1": "rosaria",
+    "rateUpPurple2": "razor",
+    "rateUpPurple3": "bennett",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021_07_03_Leaves_in_the_Wind.PNG"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "ayaka",
+    "rateUpPurple1": "chongyun",
+    "rateUpPurple2": "ningguang",
+    "rateUpPurple3": "yanfei",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-07-22_The_Herons_Court.jpeg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "yoimiya",
+    "rateUpPurple1": "diona",
+    "rateUpPurple2": "sayu",
+    "rateUpPurple3": "xinyan",
+    "bannerImageUrl": ""
   },
   {
     "type": "limitedChar",
     "rateUpGold": "raiden",
     "rateUpPurple1": "sara",
-    "rateUpPurple2": "sayu",
-    "rateUpPurple3": "xingqiu"
+    "rateUpPurple2": "sucrose",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-09-01_Reign_of_Serenity.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "kokomi",
+    "rateUpPurple1": "rosaria",
+    "rateUpPurple2": "beidou",
+    "rateUpPurple3": "xingqiu",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-09-21_Drifting_Luminescence.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "arataki-itto",
+    "rateUpPurple1": "barbara",
+    "rateUpPurple2": "gorou",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2021/2021-12-14_Onis_Royale.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "shenhe",
+    "rateUpPurple1": "yun-jin",
+    "rateUpPurple2": "ningguang",
+    "rateUpPurple3": "chongyun",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2022/2022-01-05_The_Transcendent_One_Returns.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "yae-miko",
+    "rateUpPurple1": "thoma",
+    "rateUpPurple2": "fischl",
+    "rateUpPurple3": "diona",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2022/2022-02-16_Everbloom_Violet.jpg"
+  },
+  {
+    "type": "limitedChar",
+    "rateUpGold": "ayato",
+    "rateUpPurple1": "yun-jin",
+    "rateUpPurple2": "sucrose",
+    "rateUpPurple3": "xiangling",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2022/2022-03-30_Azure_Excursion.jpg"
   },
   {
     "type": "limitedChar",
     "rateUpGold": "yelan",
-    "rateUpPurple1": "yanfei",
-    "rateUpPurple2": "beidou",
-    "rateUpPurple3": "ningguang"
+    "rateUpPurple1": "barbara",
+    "rateUpPurple2": "noelle",
+    "rateUpPurple3": "yanfei",
+    "bannerImageUrl": "https://www.gensh.in/fileadmin/Database/Banner_Gacha/2022/2022-05-31_Discerner_of_Enigmas.jpg"
   }
 ]
