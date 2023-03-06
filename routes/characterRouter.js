@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const InventoryController = require('../controllers/inventoryController');
+const CharacterController = require('../controllers/characterController');
 
-router.get('/', InventoryController.showInventory);
-router.get('/:id', InventoryController.findInventory);
+router.get('/fiveStars', CharacterController.showFiveStarCharacter);
+router.get('/fourStars', CharacterController.showFourStarCharacter);
 
 module.exports = router;

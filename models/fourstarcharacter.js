@@ -22,7 +22,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: DataTypes.STRING,
     type: DataTypes.STRING,
-    limited: DataTypes.BOOLEAN,
     available: DataTypes.BOOLEAN
   }, {
     sequelize,
