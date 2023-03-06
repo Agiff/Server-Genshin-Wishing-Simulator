@@ -258,6 +258,17 @@ class GachaController {
       next(error);
     }
   }
+
+  static async showBannerById(req, res, next) {
+    try {
+      const { id } = req.params;
+      const banner = await Banner.findByPk(id);
+      if (!banner) throw { name: 'NotFound' };
+      res.status(200).json(banner);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = GachaController;

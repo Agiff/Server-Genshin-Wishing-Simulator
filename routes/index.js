@@ -11,8 +11,8 @@ router.get('/', UserController.home);
 
 router.use('/users', UserRouter);
 router.use('/characters', CharacterRouter);
+router.use('/gachas', GachaRouter);
 router.use('/inventories', authentication, InventoryRouter);
-router.use('/gachas', authentication, GachaRouter);
 router.use(errorHandler);
 
 module.exports = router;
