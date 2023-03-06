@@ -70,12 +70,7 @@ OR
 _Request Body_
 ```
 {
-  "username": "<username to get insert into>",
-  "password": "<password to get insert into>"
-}
-OR
-{
-  "email": "<email to get insert into>",
+  "emailUsername": "<email or username to get insert into>",
   "password": "<password to get insert into>"
 }
 ```
