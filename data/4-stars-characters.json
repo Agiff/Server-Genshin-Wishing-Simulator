@@ -2,161 +2,193 @@
   {
     "name": "amber",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Ambor.png"
   },
   {
     "name": "barbara",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Barbara.png"
   },
   {
     "name": "beidou",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Beidou.png"
   },
   {
     "name": "bennett",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Bennett.png"
   },
   {
     "name": "candace",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "chongyun",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Chongyun.png"
   },
   {
     "name": "collei",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Collei.png"
   },
   {
     "name": "diona",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Diona.png"
   },
   {
     "name": "dori",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "faruzan",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "fischl",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Fischl.png"
   },
   {
     "name": "gorou",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Gorou.png"
   },
   {
     "name": "kaeya",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Kaeya.png"
   },
   {
     "name": "sara",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Sara.png"
   },
   {
     "name": "kuki-shinobu",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Shinobu.png"
   },
   {
     "name": "layla",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "lisa",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Lisa.png"
   },
   {
     "name": "mika",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "ningguang",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Ningguang.png"
   },
   {
     "name": "noelle",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Noel.png"
   },
   {
     "name": "razor",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Razor.png"
   },
   {
     "name": "rosaria",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Rosaria.png"
   },
   {
     "name": "sayu",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Sayu.png"
   },
   {
     "name": "shikanoin-heizou",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Heizo.png"
   },
   {
     "name": "sucrose",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Sucrose.png"
   },
   {
     "name": "thoma",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Tohma.png"
   },
   {
     "name": "xiangling",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Xiangling.png"
   },
   {
     "name": "xingqiu",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Xingqiu.png"
   },
   {
     "name": "xinyan",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Xinyan.png"
   },
   {
     "name": "yanfei",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Feiyan.png"
   },
   {
     "name": "yaoyao",
     "type": "character",
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "yun-jin",
     "type": "character",
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Yunjin.png"
   }
 ]

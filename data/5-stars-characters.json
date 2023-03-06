@@ -3,192 +3,224 @@
     "name": "albedo",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Albedo.png"
   },
   {
     "name": "alhaitham",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "aloy",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Aloy.png"
   },
   {
     "name": "arataki-itto",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Itto.png"
   },
   {
     "name": "cyno",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "dehya",
     "type": "character",
     "limited": false,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "diluc",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Diluc.png"
   },
   {
     "name": "eula",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Eula.png"
   },
   {
     "name": "ganyu",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Ganyu.png"
   },
   {
     "name": "hu-tao",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Hutao.png"
   },
   {
     "name": "jean",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Qin.png"
   },
   {
     "name": "kazuha",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Kazuha.png"
   },
   {
     "name": "ayaka",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Ayaka.png"
   },
   {
     "name": "ayato",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Ayato.png"
   },
   {
     "name": "keqing",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Keqing.png"
   },
   {
     "name": "klee",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Klee.png"
   },
   {
     "name": "mona",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Mona.png"
   },
   {
     "name": "nahida",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "nilou",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "qiqi",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Qiqi.png"
   },
   {
     "name": "raiden",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Shougun.png"
   },
   {
     "name": "kokomi",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Kokomi.png"
   },
   {
     "name": "shenhe",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Shenhe.png"
   },
   {
     "name": "tartaglia",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Tartaglia.png"
   },
   {
     "name": "tighnari",
     "type": "character",
     "limited": false,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Tighnari.png"
   },
   {
     "name": "venti",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Venti.png"
   },
   {
     "name": "wanderer",
     "type": "character",
     "limited": true,
-    "available": false
+    "available": false,
+    "imageUrl": ""
   },
   {
     "name": "xiao",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Xiao.png"
   },
   {
     "name": "yae-miko",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Yae.png"
   },
   {
     "name": "yelan",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Yelan.png"
   },
   {
     "name": "yoimiya",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Yoimiya.png"
   },
   {
     "name": "zhongli",
     "type": "character",
     "limited": true,
-    "available": true
+    "available": true,
+    "imageUrl": "https://muakasan.github.io/genshin-portraits/assets/UI_AvatarIcon_Zhongli.png"
   }
 ]
