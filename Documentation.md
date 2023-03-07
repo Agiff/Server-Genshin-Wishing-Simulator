@@ -131,7 +131,7 @@ _Response (200 - OK)_
 _Response (401 - Unauthorized)_
 ```
 {
-  "message": "Only registered users can access this page"
+  "message": "Please login first"
 }
 ```
 
