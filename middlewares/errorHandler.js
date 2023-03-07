@@ -17,7 +17,7 @@ const errorHandler = (err, req, res, next) => {
 
     case 'Unauthenticated':
     case 'JsonWebTokenError':
-      res.status(401).json({ message: 'Only registered users can access this page' });
+      res.status(401).json({ message: 'Please login first' });
       break;
 
     case 'Forbidden':
