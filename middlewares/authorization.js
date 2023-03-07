@@ -2,8 +2,7 @@ const { Inventory, User } = require('../models');
 
 const inventoryAuthorization = async (req, res, next) => {
   try {
-    const { id } = req.params;
-    const currentInventory = await Inventory.findByPk(id);
+    const currentInventory = await Inventory.findByPk(req.user.id);
     if (!currentInventory) throw { name: 'NotFound' };
 
     if (req.user.id !== currentInventory.UserId) throw { name: 'Forbidden' }

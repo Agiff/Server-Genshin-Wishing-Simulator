@@ -4,7 +4,8 @@ class InventoryController {
   static async showInventory(req, res, next) {
     try {
       const inventories = await Inventory.findAll({
-        include: User
+        include: [Character, Weapon],
+        where: { UserId: req.user.id }
       });
       res.status(200).json(inventories);
     } catch (error) {
@@ -12,25 +13,12 @@ class InventoryController {
     }
   }
 
-  static async findInventory(req, res, next) {
-    try {
-      const { id } = req.params;
-      const inventory = await Inventory.findByPk(id, {
-        include: [Character, Weapon]
-      })
-      if (!inventory) throw { name: 'NotFound' };
-      res.status(200).json(inventory);
-    } catch (error) {
-      next(error);
-    }
-  }
-
   static async updateInventory(req, res, next) {
     try {
-      const { id, type } = req.params;
+      const { type } = req.params;
       const { primogem, intertwined_fate, acquaint_fate } = req.body;
 
-      const currentInventory = await Inventory.findByPk(id);
+      const currentInventory = await Inventory.findByPk(req.user.id);
       if (!currentInventory) throw { name: 'NotFound' };
       
       let option = {};
