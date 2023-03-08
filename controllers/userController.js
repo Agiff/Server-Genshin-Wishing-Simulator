@@ -1,6 +1,7 @@
 const { comparePassword } = require('../helpers/bcrypt');
 const { createToken } = require('../helpers/jwt');
 const { User, Inventory } = require('../models');
+const midtransClient = require('midtrans-client');
 
 class UserController {
   static home(req, res) {
@@ -45,6 +46,36 @@ class UserController {
       const access_token = createToken(payload);
 
       res.send({ access_token });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async createMidtransToken(req, res, next) {
+    try {
+      const { price } = req.body;
+
+      let snap = new midtransClient.Snap({
+          // Set to true if you want Production Environment (accept real transaction).
+          isProduction : false,
+          serverKey : process.env.MIDTRANS_SECRET_KEY
+      });
+
+      let parameter = {
+        "transaction_details": {
+          "order_id": "TRANSACTION_" + Math.ceil(Math.random() * 10000000 + 1000000),
+          "gross_amount": price //total harga
+        },
+        "credit_card":{
+          "secure" : true
+        },
+        "customer_details": {
+          "email": "budi.pra@example.com",
+        }
+      };
+
+      const midtransToken = await snap.createTransaction(parameter);
+      res.status(200).json(midtransToken);
     } catch (error) {
       next(error);
     }
