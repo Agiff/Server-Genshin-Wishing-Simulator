@@ -13,29 +13,27 @@ class InventoryController {
     }
   }
 
-  static async updateInventory(req, res, next) {
+  static async buyFates(req, res, next) {
     try {
-      const { type } = req.params;
-      const { primogem, intertwined_fate, acquaint_fate } = req.body;
+      const { intertwined_fate, acquaint_fate } = req.body;
 
       const currentInventory = await Inventory.findByPk(req.user.id);
       if (!currentInventory) throw { name: 'NotFound' };
-      
-      let option = {};
 
-      if (type === 'inc') {
-        if (primogem) option.primogem = currentInventory.primogem + +primogem;
-        if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate + +intertwined_fate;
-        if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate + +acquaint_fate;
-      } else {
-        if (primogem) option.primogem = currentInventory.primogem - +primogem;
-        if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate - +intertwined_fate;
-        if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate - +acquaint_fate;
-      }
+      let price = 0;
+      if (intertwined_fate) price = +intertwined_fate * 160;
+      if (acquaint_fate) price = +acquaint_fate * 160;
+      if (currentInventory.primogem < price) throw { name: 'NotEnoughCurrency' };
+
+      let option = {};
+      option.primogem = currentInventory.primogem - price;
+
+      if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate + +intertwined_fate;
+      if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate + +acquaint_fate;
 
       await currentInventory.update(option);
       
-      res.status(200).json({ message: 'Inventory updated' });
+      res.status(200).json({ message: 'Purchase success' });
     } catch (error) {
       next(error);
     }
