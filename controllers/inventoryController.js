@@ -38,6 +38,21 @@ class InventoryController {
       next(error);
     }
   }
+
+  static async topup(req, res, next) {
+    try {
+      const { primogem } = req.body;
+
+      const currentInventory = await Inventory.findByPk(req.user.id);
+      if (!currentInventory) throw { name: 'NotFound' };
+
+      await currentInventory.update({ primogem: currentInventory.primogem + +primogem });
+      
+      res.status(200).json({ message: 'Top Up success' });
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = InventoryController;
