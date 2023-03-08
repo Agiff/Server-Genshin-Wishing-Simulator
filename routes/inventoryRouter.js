@@ -3,6 +3,6 @@ const InventoryController = require('../controllers/inventoryController');
 const { inventoryAuthorization } = require('../middlewares/authorization');
 
 router.get('/', InventoryController.showInventory);
-router.patch('/update/:type', inventoryAuthorization, InventoryController.updateInventory);
+router.put('/buy', inventoryAuthorization, InventoryController.buyFates);
 
 module.exports = router;
