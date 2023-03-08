@@ -11,6 +11,10 @@ const errorHandler = (err, req, res, next) => {
       res.status(400).json({ message: 'Username/Email or Password is required' });
       break;
 
+    case 'NotEnoughCurrency':
+      res.status(400).json({ message: "You don't have enough fate" });
+      break;
+
     case 'UsernameEmailPasswordInvalid':
       res.status(401).json({ message: 'Username/Email or Password is invalid' });
       break;
