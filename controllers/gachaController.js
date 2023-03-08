@@ -537,6 +537,17 @@ class GachaController {
       next(error);
     }
   }
+
+  static async showPity(req, res, next) {
+    try {
+      const pities = await Pity.findOne({
+        where: { UserId: req.user.id }
+      });
+      res.status(200).json(pities);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = GachaController;
