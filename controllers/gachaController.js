@@ -31,6 +31,13 @@ class GachaController {
       })
       if (!currentInventory) throw { name: 'NotFound' };
 
+      if (currentInventory.intertwined_fate < 1) throw { name: 'NotEnoughCurrency' };
+      await Inventory.update({
+        intertwined_fate: currentInventory.intertwined_fate - 1
+      }, {
+        where: { UserId: currentUser.id }
+      })
+
       //Increase Pity Count
       currentUser.Pity.charLimitedGoldPity++;
       currentUser.Pity.charLimitedPurplePity++;
@@ -267,6 +274,13 @@ class GachaController {
         include: [Character]
       })
       if (!currentInventory) throw { name: 'NotFound' };
+
+      if (currentInventory.intertwined_fate < 10) throw { name: 'NotEnoughCurrency' };
+      await Inventory.update({
+        intertwined_fate: currentInventory.intertwined_fate - 10
+      }, {
+        where: { UserId: currentUser.id }
+      })
 
       const totalResult = {
         title: [],
