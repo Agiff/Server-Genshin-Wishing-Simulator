@@ -3,8 +3,9 @@ const { User, Inventory, Character, Weapon } = require('../models');
 class InventoryController {
   static async showInventory(req, res, next) {
     try {
-      const inventories = await Inventory.findAll({
-        include: User
+      const inventories = await Inventory.findOne({
+        include: [Character, Weapon],
+        where: { UserId: req.user.id }
       });
       res.status(200).json(inventories);
     } catch (error) {
@@ -12,42 +13,42 @@ class InventoryController {
     }
   }
 
-  static async findInventory(req, res, next) {
+  static async buyFates(req, res, next) {
     try {
-      const { id } = req.params;
-      const inventory = await Inventory.findByPk(id, {
-        include: [Character, Weapon]
-      })
-      if (!inventory) throw { name: 'NotFound' };
-      res.status(200).json(inventory);
+      const { intertwined_fate, acquaint_fate } = req.body;
+
+      const currentInventory = await Inventory.findByPk(req.user.id);
+      if (!currentInventory) throw { name: 'NotFound' };
+
+      let price = 0;
+      if (intertwined_fate) price = +intertwined_fate * 160;
+      if (acquaint_fate) price = +acquaint_fate * 160;
+      if (currentInventory.primogem < price) throw { name: 'NotEnoughCurrency' };
+
+      let option = {};
+      option.primogem = currentInventory.primogem - price;
+
+      if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate + +intertwined_fate;
+      if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate + +acquaint_fate;
+
+      await currentInventory.update(option);
+      
+      res.status(200).json({ message: 'Purchase success' });
     } catch (error) {
       next(error);
     }
   }
 
-  static async updateInventory(req, res, next) {
+  static async topup(req, res, next) {
     try {
-      const { id, type } = req.params;
-      const { primogem, intertwined_fate, acquaint_fate } = req.body;
+      const { primogem } = req.body;
 
-      const currentInventory = await Inventory.findByPk(id);
+      const currentInventory = await Inventory.findByPk(req.user.id);
       if (!currentInventory) throw { name: 'NotFound' };
-      
-      let option = {};
 
-      if (type === 'inc') {
-        if (primogem) option.primogem = currentInventory.primogem + +primogem;
-        if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate + +intertwined_fate;
-        if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate + +acquaint_fate;
-      } else {
-        if (primogem) option.primogem = currentInventory.primogem - +primogem;
-        if (intertwined_fate) option.intertwined_fate = currentInventory.intertwined_fate - +intertwined_fate;
-        if (acquaint_fate) option.acquaint_fate = currentInventory.acquaint_fate - +acquaint_fate;
-      }
-
-      await currentInventory.update(option);
+      await currentInventory.update({ primogem: currentInventory.primogem + +primogem });
       
-      res.status(200).json({ message: 'Inventory updated' });
+      res.status(200).json({ message: 'Top Up success' });
     } catch (error) {
       next(error);
     }

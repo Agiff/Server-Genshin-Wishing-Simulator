@@ -11,13 +11,21 @@ const errorHandler = (err, req, res, next) => {
       res.status(400).json({ message: 'Username/Email or Password is required' });
       break;
 
+    case 'NotEnoughCurrency':
+      res.status(400).json({ message: "You don't have enough currency" });
+      break;
+
+    case 'MidtransError':
+      res.status(400).json({ message: err.ApiResponse.error_messages[0] });
+      break;
+
     case 'UsernameEmailPasswordInvalid':
       res.status(401).json({ message: 'Username/Email or Password is invalid' });
       break;
 
     case 'Unauthenticated':
     case 'JsonWebTokenError':
-      res.status(401).json({ message: 'Only registered users can access this page' });
+      res.status(401).json({ message: 'Please login first' });
       break;
 
     case 'Forbidden':
