@@ -12,7 +12,7 @@ const errorHandler = (err, req, res, next) => {
       break;
 
     case 'NotEnoughCurrency':
-      res.status(400).json({ message: "You don't have enough fate" });
+      res.status(400).json({ message: "You don't have enough currency" });
       break;
 
     case 'MidtransError':
