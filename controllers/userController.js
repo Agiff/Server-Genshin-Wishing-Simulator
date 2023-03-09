@@ -1,6 +1,6 @@
 const { comparePassword } = require('../helpers/bcrypt');
 const { createToken } = require('../helpers/jwt');
-const { User, Inventory } = require('../models');
+const { User, Inventory, Pity } = require('../models');
 const midtransClient = require('midtrans-client');
 
 class UserController {
@@ -18,6 +18,20 @@ class UserController {
         intertwined_fate: 0,
         acquaint_fate: 0,
         starglitter: 0
+      })
+      await Pity.create({
+        UserId: createdUser.id,
+        charLimitedGoldPity: 0,
+        charLimitedPurplePity: 0,
+        weaponLimitedGoldPity: 0,
+        weaponLimitedPurplePity: 0,
+        standardGoldPity: 0,
+        standardPurplePity: 0,
+        guaranteedGoldCharacter: false,
+        guaranteedPurpleCharacter: false,
+        guaranteedGoldWeapon: false,
+        guaranteedPurpleWeapon: false,
+        fatePoint: 0
       })
       res.status(201).json({
         id: createdUser.id,
