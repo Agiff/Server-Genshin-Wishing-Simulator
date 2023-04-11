@@ -1,6 +1,6 @@
 const { comparePassword } = require('../helpers/bcrypt');
 const { createToken } = require('../helpers/jwt');
-const { User, Inventory, Pity } = require('../models');
+const { User, Inventory, Pity, sequelize } = require('../models');
 const midtransClient = require('midtrans-client');
 
 class UserController {
@@ -9,16 +9,18 @@ class UserController {
   }
 
   static async register(req, res, next) {
+    const t = await sequelize.transaction();
     try {
       const { username, email, password } = req.body;
-      const createdUser = await User.create({ username, email, password });
+      const createdUser = await User.create({ username, email, password },
+      { transaction: t });
       await Inventory.create({ 
         UserId: createdUser.id,
-        primogem: 0,
+        primogem: 1000000,
         intertwined_fate: 0,
         acquaint_fate: 0,
         starglitter: 0
-      })
+      }, { transaction: t });
       await Pity.create({
         UserId: createdUser.id,
         charLimitedGoldPity: 0,
@@ -32,13 +34,16 @@ class UserController {
         guaranteedGoldWeapon: false,
         guaranteedPurpleWeapon: false,
         fatePoint: 0
-      })
+      }, { transaction: t })
+
+      await t.commit();
       res.status(201).json({
         id: createdUser.id,
         username: createdUser.username,
         email: createdUser.email
       });
     } catch (error) {
+      await t.rollback();
       next(error);
     }
   }
